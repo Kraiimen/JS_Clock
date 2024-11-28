@@ -1,0 +1,40 @@
+.clock-face{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+
+    //CLOCK HANDS
+    .hand {
+        position: absolute;
+        top: 50%;
+        transform-origin: 100%;
+        transform: rotate(90deg);    
+        transition: all .05s;
+        transition-timing-function: cubic-bezier(0.19, 0.07, 0.22, 1.44);
+    }
+
+    .hours{
+        left: 15%;
+        width: 35%;
+        height: .55rem;
+        background: #141414;
+        border-radius: 5rem;
+    }
+
+    .minutes{
+        left: 10%;
+        width: 40%;
+        height: .55rem;
+        background: #141414;
+        border-radius: 5rem;
+    }
+
+    .seconds{
+        left: 5%;
+        width: 45%;
+        height: .3rem;
+        background: #D62828;
+        border-radius: 5rem;
+    }
+}

@@ -1,0 +1,18 @@
+.clock{
+    //CLOCK
+    background-color: #535565;
+    width: 25rem;
+    height: 25rem;
+
+    box-shadow: inset 0 0 1.5rem black,
+                0 0 1rem #292929;
+
+    border-radius: 50%;
+    border: 1.5rem solid #070707;
+
+    @media screen and (max-width: 456px){
+        width: 16rem;
+        height: 16rem;
+        border-width: 1rem;
+    }
+}
